@@ -1,10 +1,10 @@
-package cordova-plugin-install-referrer;
+package cordova-install-referrer;
 
 import android.os.Bundle;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import cordova-plugin-install-referrer.referrer;
+import cordova-install-referrer.referrer;
 
 public class receiver extends BroadcastReceiver {
 

@@ -5,7 +5,7 @@ This plugin captures the referrer value passed when an android app is installed 
 
 ## Install
 
-`cordova plugins add https://github.com/sDofeen/cordova-plugin-install-referrer.git`
+`cordova plugins add cordova-install-referrer`
 
 ## Usage
 
@@ -49,6 +49,6 @@ run `adb shell` and then
 
 ```
 am broadcast -a com.android.vending.INSTALL_REFERRER \
--n <your.package.id>/cordova-plugin-install-referrer.receiver \
+-n <your.package.id>/cordova-install-referrer.receiver \
 --es "referrer" "referrer-value"
 ```
