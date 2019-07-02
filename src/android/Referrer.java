@@ -1,4 +1,4 @@
-package cordova-install-referrer;
+package com.sdofeen.cordova.plugins.referrer;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -6,17 +6,14 @@ import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-/**
- * This class echoes a string called from JavaScript.
- */
-public class referrer extends CordovaPlugin {
 
-    public static String ref = "";
+public class Referrer extends CordovaPlugin {
+    public static String data = "";
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-            callbackContext.success(referrer.ref);
+        callbackContext.success(referrer.data);
+
         return true;
     }
-
 }

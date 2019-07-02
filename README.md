@@ -49,6 +49,6 @@ run `adb shell` and then
 
 ```
 am broadcast -a com.android.vending.INSTALL_REFERRER \
--n <your.package.id>/cordova-install-referrer.receiver \
+-n <your.package.id>/com.sdofeen.cordova.plugins.referrer.Receiver \
 --es "referrer" "referrer-value"
 ```

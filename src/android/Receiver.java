@@ -1,24 +1,20 @@
-package cordova-install-referrer;
+package com.sdofeen.cordova.plugins.referrer;
 
 import android.os.Bundle;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import cordova-install-referrer.referrer;
+import com.sdofeen.cordova.plugins.referrer.Referrer;
 
-public class receiver extends BroadcastReceiver {
-
+public class Receiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-
         String rawReferrerString = intent.getStringExtra("referrer");
 
-        if(rawReferrerString != null) {
-            referrer.ref = rawReferrerString;
+        if (rawReferrerString != null) {
+            referrer.data = rawReferrerString;
         } else {
-	    	referrer.ref = "";
+	    	referrer.data = "";
 		}
-
     }
-
 }
