@@ -1,7 +1,7 @@
 {
   "name": "cordova-install-referrer",
-  "version": "0.1.1",
-  "description": "Android install referrer plugin for Cordova",
+  "version": "0.1.2",
+  "description": "Cordova Install Referrer",
   "cordova": {
     "id": "cordova-install-referrer",
     "platforms": [
@@ -16,7 +16,7 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "sDofeen",
+  "author": "Gennadiy Yermilov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sDofeen/cordova-install-referrer/issues"

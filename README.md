@@ -1,4 +1,4 @@
-Android Install Referrer
+Cordova Install Referrer
 ========================
 
 This plugin captures the referrer value passed when an android app is installed from a webpage. 
