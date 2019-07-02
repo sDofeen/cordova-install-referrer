@@ -12,9 +12,9 @@ public class Receiver extends BroadcastReceiver {
         String rawReferrerString = intent.getStringExtra("referrer");
 
         if (rawReferrerString != null) {
-            referrer.data = rawReferrerString;
+            Referrer.data = rawReferrerString;
         } else {
-	    	referrer.data = "";
+	    	Referrer.data = "";
 		}
     }
 }

@@ -12,7 +12,7 @@ public class Referrer extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        callbackContext.success(referrer.data);
+        callbackContext.success(Referrer.data);
 
         return true;
     }
