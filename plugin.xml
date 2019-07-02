@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-install-referrer" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>referrer</name>
+
+	<js-module name="referrer" src="www/referrer.js">
+		<clobbers target="cordova.plugins.referrer" />
+	</js-module>
+
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="referrer">
+				<param name="android-package" value="cordova-plugin-install-referrer.referrer" />
+			</feature>
+		</config-file>
+
+		<source-file src="src/android/referrer.java" target-dir="src/com/sdofeen/cordova/plugin/referrer" />
+		<source-file src="src/android/receiver.java" target-dir="src/com/sdofeen/cordova/plugin/referrer" />
+
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<receiver android:exported="true" android:name="cordova-plugin-install-referrer.receiver">
+		        <intent-filter>
+		            <action android:name="com.android.vending.INSTALL_REFERRER" />
+		        </intent-filter>
+		    </receiver>
+		</config-file>
+
+	</platform>
+</plugin>
