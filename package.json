@@ -1,6 +1,6 @@
 {
   "name": "cordova-install-referrer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Cordova Install Referrer",
   "cordova": {
     "id": "cordova-install-referrer",

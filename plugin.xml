@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-install-referrer"
-        version="0.1.4"
+        version="0.1.5"
         xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>Cordova Install Referrer</name>
 
-    <js-module name="Referrer" src="www/referrer.js">
+    <js-module name="referrer" src="www/referrer.js">
         <clobbers target="cordova.plugins.referrer"/>
     </js-module>
 
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="Referrer">
+            <feature name="referrer">
                 <param name="android-package" value="com.sdofeen.cordova.plugins.referrer.Referrer"/>
             </feature>
         </config-file>
